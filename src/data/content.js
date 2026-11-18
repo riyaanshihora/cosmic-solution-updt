@@ -1,6 +1,13 @@
 import aiDriven from '../assets/ai-driven.jpg';
 import erp from '../assets/erp.jpg';
 import consultation from '../assets/consultation.jpg';
+import capPredictive from '../assets/cap-predictive.png';
+import capAutomated from '../assets/cap-automated.png';
+import capAnalytics from '../assets/cap-analytics.png';
+import capMultilingual from '../assets/cap-multilingual.png';
+import capPipelines from '../assets/cap-pipelines.png';
+import capData from '../assets/cap-data.png';
+
 
 export const INTRO =
   'We turn complex ideas into intelligent software that helps businesses grow across borders.';
@@ -12,12 +19,36 @@ export const TRIO = [
 ];
 
 export const CAPABILITIES = [
-  { title: 'Predictive web interfaces', text: 'Interfaces that anticipate what each visitor needs next, so every page feels fast and personal.' },
-  { title: 'Automated UI adjustments', text: 'Layouts and content that adapt on their own to behaviour and context.' },
-  { title: 'Conversion-focused analytics', text: 'Analytics layers built into the site that show what turns visitors into customers.' },
-  { title: 'Multilingual architectures', text: 'One website in many languages, built from the start for cross-border traffic.' },
-  { title: 'Machine learning pipelines', text: 'Integrations that bring models into your product and keep them tuned.' },
-  { title: 'Predictive data systems', text: 'Cloud-native data foundations that forecast, automate, and scale with your business.' },
+  {
+    title: 'Predictive web interfaces',
+    text: 'Interfaces that anticipate what each visitor needs next, so every page feels fast and personal.',
+    image: capPredictive,
+  },
+  {
+    title: 'Automated UI adjustments',
+    text: 'Layouts and content that adapt on their own to behaviour and context.',
+    image: capAutomated,
+  },
+  {
+    title: 'Conversion-focused analytics',
+    text: 'Analytics layers built into the site that show what turns visitors into customers.',
+    image: capAnalytics,
+  },
+  {
+    title: 'Multilingual architectures',
+    text: 'One website in many languages, built from the start for cross-border traffic.',
+    image: capMultilingual,
+  },
+  {
+    title: 'Machine learning pipelines',
+    text: 'Integrations that bring models into your product and keep them tuned.',
+    image: capPipelines,
+  },
+  {
+    title: 'Predictive data systems',
+    text: 'Cloud-native data foundations that forecast, automate, and scale with your business.',
+    image: capData,
+  },
 ];
 
 export const SERVICES = [
@@ -80,3 +111,4 @@ export const SERVICE_OPTIONS = [
   'Global IT Consulting',
   'Something else',
 ];
+

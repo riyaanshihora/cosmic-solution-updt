@@ -178,3 +178,20 @@ summary,summary::after{color:#fff}
 /* Move logo slightly to the right */
 nav{padding-left:3rem}
 @media (max-width:899px){nav{padding-left:1.6rem}}
+/* Capability cards with illustrations */
+.bento .cap{display:flex;flex-direction:column;gap:1.2rem;justify-content:flex-end;min-height:230px;padding:2.2rem 2.4rem}
+.cap-img{position:static;flex:none;width:auto;height:100px;align-self:flex-end;pointer-events:none}
+.cap-t{position:relative;z-index:1;min-width:0}
+.bento .cap h3{font-size:1.55rem}
+.bento .cap:nth-child(1),.bento .cap:nth-child(3),.bento .cap:nth-child(4),.bento .cap:nth-child(6){flex-direction:row-reverse;align-items:center;justify-content:space-between;gap:2rem}
+.bento .cap:nth-child(1) .cap-t,.bento .cap:nth-child(3) .cap-t,.bento .cap:nth-child(4) .cap-t,.bento .cap:nth-child(6) .cap-t{flex:1 1 0}
+.bento .cap:nth-child(1) .cap-img{height:130px;align-self:center}
+.bento .cap:nth-child(3) .cap-img,.bento .cap:nth-child(4) .cap-img{height:120px;align-self:center}
+.bento .cap:nth-child(6) .cap-img{height:150px;align-self:center}
+.bento .cap:nth-child(1) h3{font-size:2rem}
+.bento .cap:nth-child(2),.bento .cap:nth-child(5){min-height:280px;justify-content:space-between}
+@media (max-width:899px){
+  .bento .cap,.bento .cap:nth-child(n){flex-direction:column;align-items:stretch;justify-content:flex-start;min-height:0;padding:1.8rem;gap:1rem}
+  .cap-img,.bento .cap:nth-child(n) .cap-img{height:100px;align-self:flex-end}
+  .bento .cap:nth-child(n) h3{font-size:1.5rem}
+}

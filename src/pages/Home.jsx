@@ -54,12 +54,16 @@ export default function Home() {
             subtitle="Six capabilities that make websites and software smarter from day one."
           />
           <div className="bento">
-            {CAPABILITIES.map((c) => (
-              <div className="card" key={c.title}>
-                <h3>{c.title}</h3>
-                <p>{c.text}</p>
-              </div>
-            ))}
+             {CAPABILITIES.map((c) => (
+  <div className="card cap" key={c.title}>
+    <img className="cap-img" src={c.image} alt="" />
+    <div className="cap-t">
+      <h3>{c.title}</h3>
+      <p>{c.text}</p>
+    </div>
+  </div>
+))}
+        
           </div>
         </div>
       </section>
