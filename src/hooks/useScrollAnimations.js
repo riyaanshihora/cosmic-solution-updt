@@ -37,7 +37,7 @@ export default function useScrollAnimations(rootRef, page) {
         });
 
         gsap.to('.intro .w', {
-          color: '#2E1650',
+          color: '#6A1B29',
           stagger: 0.12,
           ease: 'none',
           scrollTrigger: { trigger: '.intro p.big', start: 'top 80%', end: 'bottom 45%', scrub: true },

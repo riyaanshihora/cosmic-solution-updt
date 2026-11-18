@@ -149,3 +149,68 @@ details{border-color:rgba(108,59,170,.25)}details:last-child{border-color:rgba(1
 .steps .n{color:var(--wine)}
 .tag{color:var(--wine)}
 summary::after{color:var(--wine)}
+/* ===== Theme update: white site, wine text, purple glass boxes ===== */
+body{background:#fff;color:#6A1B29}
+.sec,.intro,.alt,.dk,.svc,.panel{background:transparent}
+h1,h2,h3{color:inherit}
+
+/* Navbar: solid white, wine links */
+nav{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:0 1px 0 rgba(108,59,170,.14)}
+nav a,nav a:hover,nav a[aria-current]{color:#6A1B29}
+
+/* Text accents */
+.intro .w{color:#EEDDE2}
+.tag,.lnk{color:#8A2A3D}
+.hero .lnk{color:#fff}
+
+/* Buttons */
+.btn{background:linear-gradient(135deg,#8A2A3D,#6A1B29);color:#fff;box-shadow:0 8px 24px rgba(106,27,41,.28)}
+.btn:hover{background:linear-gradient(135deg,#6A1B29,#4F1220)}
+.hero .btn{background:#fff;color:#6A1B29;box-shadow:none}
+
+/* Images and placeholders */
+.pimg{box-shadow:0 20px 50px rgba(0,0,0,.12)}
+.ph{background:#fff;border-color:rgba(106,27,41,.4);color:#6A1B29}
+
+/* Purple glass boxes */
+.card,.alt .card,.intro .card,
+.bento .card:nth-child(1),.bento .card:nth-child(6),
+.cta,.why .it,details{
+  position:relative;overflow:hidden;color:#fff;
+  background:linear-gradient(135deg,rgba(88,44,146,.95),rgba(62,29,108,.88));
+  border:1px solid rgba(255,255,255,.38);
+  box-shadow:0 14px 44px rgba(62,29,108,.32),inset 0 1px 0 rgba(255,255,255,.35);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  backdrop-filter:blur(16px) saturate(140%);
+}
+.card::after,.cta::after,.why .it::after,details::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(120deg,rgba(255,255,255,.16),transparent 42%);
+}
+.card h3,.bento .card:nth-child(1) h3,.bento .card:nth-child(6) h3,
+.why .it h3,.cta h2{color:#fff}
+.card p,.why .it p,.cta p,details p{color:#F1E8FA;opacity:1}
+.steps .n{color:#E3D7F3}
+.why .it{padding:1.8rem 2rem;margin-bottom:1rem;border-radius:24px}
+.why .it:last-child,details:last-child{border:1px solid rgba(255,255,255,.38)}
+details{border-radius:20px;padding:1.2rem 1.6rem;margin-bottom:.9rem}
+summary,summary::after{color:#fff}
+.cta .btn,.card .btn{background:#fff;color:#3E1D6C;box-shadow:none}
+
+/* Enquiry form inside the purple box */
+.fld span,.chk{color:#fff}
+.fld input,.fld select,.fld textarea{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.4);color:#fff}
+.fld input::placeholder,.fld textarea::placeholder{color:rgba(255,255,255,.6)}
+.fld select option{background:#3B1E66;color:#fff}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.2)}
+.fld.bad input,.fld.bad textarea{border-color:#FFD0DB}
+.e{color:#FFD0DB}
+
+/* Footer: white with wine text */
+.close{background:#fff;color:#6A1B29;border-top:1px solid rgba(106,27,41,.15)}
+.close .big{background:linear-gradient(90deg,#6A1B29,#51288A);-webkit-background-clip:text;background-clip:text;color:transparent}
+.close .f{border-color:rgba(106,27,41,.2)}
+.close h3{color:#8A2A3D}
+.close a{color:#6A1B29}
+
+::selection{background:#6A1B29;color:#fff}
