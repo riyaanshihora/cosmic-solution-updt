@@ -105,58 +105,19 @@ details[open] summary::after{transform:rotate(45deg)}details p{margin-top:.9rem;
  .hero h1{letter-spacing:-.035em}.cta{border-radius:28px}
 }
 
-/* ---------- Theme accents: wine, white, purple ---------- */
-::selection{background:var(--purple);color:#fff}
-:focus-visible{outline-color:var(--purple)}
-#bar{background:linear-gradient(90deg,var(--wine),var(--purple))}
-nav a:hover,nav a[aria-current]{color:var(--purple)}
-.lnk{color:var(--purple)}.hero .lnk{color:#fff}
-.btn{box-shadow:0 8px 24px rgba(46,22,80,.18)}
-.hero .btn,.cta .btn{box-shadow:none}
-.tag{color:var(--purple)}
-.steps .n{color:var(--purple)}
-.bento .card:nth-child(6){background:var(--purple);color:#fff}
-.card h3{color:var(--wine)}.bento .card:nth-child(1) h3,.bento .card:nth-child(6) h3{color:#fff}
-.intro .w{color:var(--faint)}
-summary::after{color:var(--purple)}
-details{border-color:rgba(108,59,170,.25)}details:last-child{border-color:rgba(108,59,170,.25)}
-.cta{background:linear-gradient(135deg,var(--wine) 0%,var(--deep) 45%,var(--purple-deep) 100%)}
-.close{background:var(--deep);color:#fff}
-.close .big{background:linear-gradient(90deg,#fff,#D9C9EC);-webkit-background-clip:text;background-clip:text;color:transparent}
-.close .f{border-color:rgba(255,255,255,.25)}
-.close h3{color:#D9C9EC}
-.ph{border-color:rgba(108,59,170,.45)}.ph .in{background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(108,59,170,.07) 22px 23px)}
-.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--purple);box-shadow:0 0 0 4px rgba(108,59,170,.18)}
-.chk input{accent-color:var(--purple)}
-.fld.bad input,.fld.bad textarea{border-color:var(--wine)}
-.why .it,.why .it:last-child{border-color:rgba(108,59,170,.25)}
-.hero-bg::before{background:linear-gradient(90deg,rgba(30,4,16,.55),transparent 62%)}
-@media (max-width:899px){.hero-bg::before{background:rgba(30,4,16,.6)}}
-
-/* ---------- Purple-led balance: purple primary, wine accent, white base ---------- */
-.btn{background:var(--purple);box-shadow:0 8px 24px rgba(108,59,170,.28)}.btn:hover{background:var(--purple-deep)}
-.hero .btn{background:#fff;color:var(--purple-deep)}.hero .btn:hover{background:var(--lav)}
-.cta .btn{background:#fff;color:var(--purple-deep)}.cta .btn:hover{background:var(--lav)}
-.fld input,.fld select,.fld textarea{color:var(--ink)}
-.fld input::placeholder,.fld textarea::placeholder{color:rgba(46,22,80,.5)}
-.fld.bad input,.fld.bad textarea{border-color:var(--wine)}
-.card h3{color:var(--ink)}
-.bento .card:nth-child(1){background:var(--purple)}
-.bento .card:nth-child(6){background:var(--wine)}
-.cta{background:linear-gradient(135deg,var(--purple-deep) 0%,var(--purple) 55%,var(--wine) 130%)}
-.close{background:var(--ink)}
-#bar{background:linear-gradient(90deg,var(--purple),var(--wine))}
-.steps .n{color:var(--wine)}
-.tag{color:var(--wine)}
-summary::after{color:var(--wine)}
 /* ===== Theme update: white site, wine text, purple glass boxes ===== */
 body{background:#fff;color:#6A1B29}
 .sec,.intro,.alt,.dk,.svc,.panel{background:transparent}
 h1,h2,h3{color:inherit}
 
-/* Navbar: solid white, wine links */
-nav{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:0 1px 0 rgba(108,59,170,.14)}
+/* Navbar: solid white, wine links, logo and link sizes */
+nav{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:0 1px 0 rgba(108,59,170,.14);height:calc(92px + env(safe-area-inset-top,0px))}
+nav img{height:60px}
+nav ul{gap:2.4rem;font-size:1rem}
 nav a,nav a:hover,nav a[aria-current]{color:#6A1B29}
+.why .l{top:8rem}
+@media (min-width:900px) and (prefers-reduced-motion:no-preference){.svc-head{padding-top:7rem}}
+@media (max-width:899px){nav{height:calc(70px + env(safe-area-inset-top,0px))}nav img{height:38px}nav ul{gap:.7rem;font-size:.8rem}}
 
 /* Text accents */
 .intro .w{color:#EEDDE2}
@@ -214,3 +175,6 @@ summary,summary::after{color:#fff}
 .close a{color:#6A1B29}
 
 ::selection{background:#6A1B29;color:#fff}
+/* Move logo slightly to the right */
+nav{padding-left:3rem}
+@media (max-width:899px){nav{padding-left:1.6rem}}
