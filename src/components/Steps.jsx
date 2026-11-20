@@ -10,13 +10,17 @@ export default function Steps() {
           subtitle="A clear path from idea to a product people use around the world."
         />
         <div className="steps">
-          {STEPS.map((s, i) => (
-            <div className="card" key={s.title}>
-              <div className="n">{i + 1}</div>
-              <h3>{s.title}</h3>
-              <p>{s.text}</p>
-            </div>
-          ))}
+ {STEPS.map((s, i) => (
+  <div className="card" key={s.title}>
+    <div className="step-top">
+      <div className="n">{i + 1}</div>
+      <img className="step-img" src={s.image} alt="" />
+    </div>
+    <h3>{s.title}</h3>
+    <p>{s.text}</p>
+  </div>
+))}
+
         </div>
       </div>
     </section>

@@ -10,24 +10,22 @@ import { INTRO, TRIO, CAPABILITIES } from '../data/content.js';
 export default function Home() {
   return (
     <>
-      <header className="hero" id="top">
-        <HeroBackground seed={11} x0={620} />
-        <div className="wrap hero-in">
-          <h1>Intelligent websites and software, built across two continents.</h1>
-          <p className="lead">
-            Global AI-driven web and software development from our hubs in India and Spain.
-          </p>
-          <div className="btns">
-            <a className="btn" href="#services">Our services</a>
-            <a className="lnk" href="#about">About us</a>
-          </div>
-          <div className="facts">
-            <div><b>India and Spain</b>Two delivery hubs</div>
-            <div><b>AI-infused</b>Websites and software</div>
-            <div><b>GDPR-aligned</b>Built for compliance</div>
-          </div>
-        </div>
-      </header>
+<header className="hero" id="top">
+  <HeroBackground seed={11} x0={620} />
+  <div className="wrap hero-in">
+    <h1>
+      Intelligent websites and software,{' '}
+      <span className="hl">built across two continents.</span>
+    </h1>
+    <p className="lead">
+      Global AI-driven web and software development from our hubs in India and Spain.
+    </p>
+    <div className="btns">
+      <a className="btn" href="#services">Our services</a>
+      <a className="lnk" href="#about">About us</a>
+    </div>
+  </div>
+</header>
 
       <section className="intro">
         <div className="wrap">

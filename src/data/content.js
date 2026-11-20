@@ -7,6 +7,10 @@ import capAnalytics from '../assets/cap-analytics.png';
 import capMultilingual from '../assets/cap-multilingual.png';
 import capPipelines from '../assets/cap-pipelines.png';
 import capData from '../assets/cap-data.png';
+import stepAlign from '../assets/step-align.svg';
+import stepBuild from '../assets/step-build.svg';
+import stepTest from '../assets/step-test.svg';
+import stepScale from '../assets/step-scale.svg';
 
 
 export const INTRO =
@@ -73,10 +77,10 @@ export const SERVICES = [
 ];
 
 export const STEPS = [
-  { title: 'Align', text: 'Our Spain hub aligns on goals, accounts, and European regulatory needs before any work starts.' },
-  { title: 'Build', text: 'Our India hub delivers full-stack code, scalable backends, and tuned AI model pipelines.' },
-  { title: 'Test', text: 'Real users in your target markets test the product, so the experience feels local.' },
-  { title: 'Scale', text: 'Rapid iteration and international project scaling take the product to a global audience.' },
+  { title: 'Align', text: 'Our Spain hub aligns on goals, accounts, and European regulatory needs before any work starts.', image: stepAlign },
+  { title: 'Build', text: 'Our India hub delivers full-stack code, scalable backends, and tuned AI model pipelines.', image: stepBuild },
+  { title: 'Test', text: 'Real users in your target markets test the product, so the experience feels local.', image: stepTest },
+  { title: 'Scale', text: 'Rapid iteration and international project scaling take the product to a global audience.', image: stepScale },
 ];
 
 export const WHY = [
